@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         resultadoTextView.text= "0"
         operacion = NO_OPERACION
 
+        // botones de la calculadora
+
         unoBoton.setOnClickListener {numeroPresionado("1")}
         dosBoton.setOnClickListener { numeroPresionado("2") }
         tresBoton.setOnClickListener { numeroPresionado("3") }
@@ -69,7 +71,7 @@ class MainActivity : AppCompatActivity() {
             resultadoTextView.text = "${resultadoTextView.text}$num"
         }
 
-      //resultadoTextView.text = "${resultadoTextView.text}$digito"
+      //resultadoTextView.text = "${resultadoTextView.text}$digito" repetido
 
         if (operacion == NO_OPERACION){
 
